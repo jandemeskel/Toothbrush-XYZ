@@ -18,7 +18,7 @@ def scrub_data(df):
 
 def handler(event,context):
     """
-    Clean daily ingested dataset.
+    Update production schema with cleaned data from staging schema.
     """
 
     engine = Utility.connect_to_db()
