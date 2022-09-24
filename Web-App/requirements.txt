@@ -1,0 +1,9 @@
+dash
+dash_bootstrap_components
+pandas
+plotly
+plotly.express
+python-dotenv 
+psycopg2-binary
+SQLalchemy 
+
