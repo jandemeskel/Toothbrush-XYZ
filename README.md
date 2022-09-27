@@ -86,11 +86,11 @@ http://3.88.12.197:8080/
 ### Dependencies
 
 - dash -> https://dash.plotly.com/installationhttps://dash.plotly.com/installation
-- dash_bootstrap_components - https://dash-bootstrap-components.opensource.faculty.ai/docs/quickstart/
-- datetime - https://docs.python.org/3/library/datetime.html
-- pandas - https://pandas.pydata.org/docs/getting_started/index.html
-- plotly & plotly.express - https://plotly.com/python/
-- python-dotenv - https://pypi.org/project/python-dotenv/
-- psycopg2-binary - https://pypi.org/project/psycopg2-binary/
-- SQLalchemy (DEPENDENT ON PSYCOPG2) - https://docs.sqlalchemy.org/en/14/
-- s3fs - https://s3fs.readthedocs.io/en/latest/
+- dash_bootstrap_components -> https://dash-bootstrap-components.opensource.faculty.ai/docs/quickstart/
+- datetime -> https://docs.python.org/3/library/datetime.html
+- pandas -> https://pandas.pydata.org/docs/getting_started/index.html
+- plotly & plotly.express -> https://plotly.com/python/
+- python-dotenv -> https://pypi.org/project/python-dotenv/
+- psycopg2-binary -> https://pypi.org/project/psycopg2-binary/
+- SQLalchemy (DEPENDENT ON PSYCOPG2) -> https://docs.sqlalchemy.org/en/14/
+- s3fs -> https://s3fs.readthedocs.io/en/latest/
