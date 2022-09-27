@@ -1,7 +1,10 @@
 import os
 
+from dotenv import load_dotenv
 import pandas as pd
 import sqlalchemy
+
+load_dotenv()
 
 class Utility:
     """
@@ -58,7 +61,7 @@ class Utility:
 
 
     @staticmethod
-    def connect_to_db():
+    def connect_to_db() -> sqlalchemy.engine:
         """
         Create engine to connect to aurora database for given credentials.
         """

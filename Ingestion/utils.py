@@ -30,7 +30,7 @@ class Utility:
         return  pd.read_csv(f's3://{daily_ingestion}') 
 
     @staticmethod
-    def connect_to_db():
+    def connect_to_db() -> sqlalchemy.engine:
         """
         Create engine to connect to aurora database for given credentials
         """

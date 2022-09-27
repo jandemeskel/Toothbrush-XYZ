@@ -15,9 +15,5 @@ insight = dbc.Card(
 
 
 layout = html.Div(
-    children = 
-    [
-        dcc.Graph(id='graph-output-3',figure=dispatched_time),
-        insight
-    ])
+    children = [dcc.Graph(id='graph-output-3',figure=dispatched_time),insight])
 
