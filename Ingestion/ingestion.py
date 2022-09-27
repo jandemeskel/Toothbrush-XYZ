@@ -20,7 +20,6 @@ def handler(event, context):
     Update aurora database schema with latest data dump
     """
     
-
     load_dotenv()
 
     username = os.getenv('DB_USER')
