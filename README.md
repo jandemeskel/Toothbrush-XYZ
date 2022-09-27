@@ -5,16 +5,19 @@ The contents of this repository are used to setup an automated pipeline & dashbo
 - Ingesting data from several sources in an S3 bucket & storing in a staging schema on AuroraDB
 - Pulling data from AuroraDB, cleaning and posting to a production schema
 
-![image](https://user-images.githubusercontent.com/80219582/192653351-984c0195-bb7e-4f88-bf8f-30131fbb4f7a.png)
-
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/80219582/192653351-984c0195-bb7e-4f88-bf8f-30131fbb4f7a.png" />
+</p>
 - Dockerizing both Ingestion & Production scripts, pushing to an ECR
 - Utilizing Lambda functions to run ECR images for both as prompted by a CloudWatch trigger
-
-![image](https://user-images.githubusercontent.com/80219582/192653400-927298e0-1cc2-4066-945e-461e33c2e992.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/80219582/192653400-927298e0-1cc2-4066-945e-461e33c2e992.png" />
+</p>
 
 - Creating a Dashboard using dash (flask-wrapper framework), dockerizing and hosting on EC2
-
-![image](https://user-images.githubusercontent.com/80219582/192653424-58d48d93-5627-46ae-a87d-7c32ef551e49.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/80219582/192653424-58d48d93-5627-46ae-a87d-7c32ef551e49.png" />
+</p>
 
 ### Dashboard Link
 
