@@ -1,10 +1,8 @@
 import os
 
-from dotenv import load_dotenv
 import pandas as pd
 import sqlalchemy
 
-load_dotenv()
 
 class Utility:
     """
@@ -75,7 +73,7 @@ class Utility:
 
 
     @staticmethod
-    def query_df(query:str, connection) -> pd.DataFrame:
+    def query_db(query:str, connection) -> pd.DataFrame:
         """
         Query a database via a given engine connection.
         """

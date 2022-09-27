@@ -82,7 +82,7 @@ class Utility:
 
 
     @staticmethod
-    def query_df(query:str, connection) -> pd.DataFrame:
+    def query_db(query:str, connection) -> pd.DataFrame:
         """
         Query a database via a given engine connection.
         """
