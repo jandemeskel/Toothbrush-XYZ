@@ -16,6 +16,10 @@ The contents of this repository are used to setup an automated pipeline & dashbo
 
 ![image](https://user-images.githubusercontent.com/80219582/192653424-58d48d93-5627-46ae-a87d-7c32ef551e49.png)
 
+### Dashboard Link
+
+[]
+
 ### Dockerization terminal commands
 
 Once the dockerfile has been created, the following commands can be used to build & run the container;
@@ -78,10 +82,6 @@ Run the container on a port which EC2 listens to (set during EC2 configuration) 
 ```sh
 sudo docker run -d -p 8080:8080 --env-file ./.env {account_id}.dkr.ecr.{region}.amazonaws.com/{ecr_registry_name}
 ```
-
-### Dashboard Link
-
-http://3.88.12.197:8080/
 
 ### Dependencies
 
