@@ -22,15 +22,15 @@ The contents of this repository are used to setup an automated pipeline & dashbo
   <img src="https://user-images.githubusercontent.com/80219582/192653424-58d48d93-5627-46ae-a87d-7c32ef551e49.png" />
 </p>
 
-### Dashboard Link
+## Dashboard Link
 
 []
 
-### Dockerization terminal commands
+## Dockerization terminal commands
 
 Once the dockerfile has been created, the following commands can be used to build & run the container;
 
-(1) Locally
+**(1) Locally**
 
 ```sh
 docker build . -t [IMAGE_TAG]
@@ -40,7 +40,7 @@ docker build . -t [IMAGE_TAG]
 docker run -d new-ingestion
 ```
 
-(2) Remotely on AWS
+**(2) Remotely on AWS**
 
 Retrieve an authentication token and authenticate your Docker client to your registry.
 Use the AWS CLI:
@@ -67,7 +67,7 @@ Run the following command to push this image to your newly created AWS repositor
 docker push [ECR_REPOSITORY_LINK]
 ```
 
-### Running dashboard ECR on EC2 instance
+## Running dashboard ECR on EC2 instance
 
 Once an SSH connection is made via the AWS CLI, use the following instructions to run an ECR image on an EC2 instance
 
