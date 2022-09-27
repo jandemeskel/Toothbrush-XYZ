@@ -1,14 +1,6 @@
-import os
-
-from dotenv import load_dotenv
 import pandas as pd
 import sqlalchemy
 
-DB_HOST='database-data-eng-instance-1.c9gelistqio1.us-east-1.rds.amazonaws.com'
-DB_PORT=5432
-DB_USER='john'
-DB_PASSWORD='sigmastudent'
-DB_NAME='week4_ecommerce'
 
 class Utility:
     """
@@ -71,17 +63,17 @@ class Utility:
         return regional_orders.sort_values(by=['order_quantity'], ascending=False)
 
     @staticmethod
-    def connect_to_db() -> sqlalchemy.engine:
+    def connect_to_db(username,password,host,db_name) -> sqlalchemy.engine:
         """
         Create engine to connect to aurora database for given credentials.
         """
 
         engine = sqlalchemy.create_engine(
         f"""postgresql+psycopg2://
-        {DB_USER}:
-        {DB_PASSWORD}@
-        {DB_HOST}/
-        {DB_NAME}""")
+        {username}:
+        {password}@
+        {host}/
+        {db_name}""")
         return engine
 
 

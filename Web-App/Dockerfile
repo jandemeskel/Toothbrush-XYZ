@@ -10,3 +10,4 @@ COPY . .
 ENV PYTHONUNBUFFERED True
 
 CMD python app.py
+

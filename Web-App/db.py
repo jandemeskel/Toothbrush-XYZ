@@ -1,9 +1,19 @@
+
+import os
+
 import plotly.express as px
+from dotenv import load_dotenv
 
 from utils import Utility
 
+load_dotenv()
 
-engine = Utility.connect_to_db()
+username = os.getenv('DB_USER')
+password = os.getenv('DB_PASSWORD')
+host = os.getenv('DB_HOST')
+db_name = os.getenv('DB_NAME')
+
+engine = Utility.connect_to_db(username,password,host,db_name)
 df = Utility.query_db('SELECT * FROM week4_john_production.production_ecommerce', engine)
 
 order_time_distribution = Utility.get_order_time_distribution(df)

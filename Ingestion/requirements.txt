@@ -3,3 +3,4 @@ s3fs
 SQLalchemy 
 psycopg2-binary
 datetime
+python-dotenv 
