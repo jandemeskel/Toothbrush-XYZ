@@ -18,7 +18,7 @@ The contents of this repository are used to setup an automated pipeline & dashbo
 
 ## Dashboard Link
 
-[]
+http://44.202.51.236:8080/
 
 ## Dockerization terminal commands
 

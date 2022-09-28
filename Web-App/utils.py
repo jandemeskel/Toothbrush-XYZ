@@ -32,7 +32,7 @@ class Utility:
         merge.rename(columns={"order_quantity_x": "order_quantity", "order_quantity_y": "month_orders"}, inplace=True)
         delivery_status_df['pct_delivery'] = (merge['order_quantity'].div(merge['month_orders'])*100).round(2)
         return delivery_status_df
-        
+
     @staticmethod
     def get_order_quantity_distribution(df):
         """
@@ -80,3 +80,4 @@ class Utility:
         Query a database via a given engine connection.
         """
         return pd.read_sql_query(query,connection)
+        
