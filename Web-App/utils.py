@@ -30,8 +30,9 @@ class Utility:
         quantity_date = pd.DataFrame(delivery_status_df.groupby(['delivery_date'])['order_quantity'].sum())
         merge = pd.merge(delivery_status_df, quantity_date, left_on='delivery_date', right_on=quantity_date.index)
         merge.rename(columns={"order_quantity_x": "order_quantity", "order_quantity_y": "month_orders"}, inplace=True)
-        return  (merge['order_quantity'].div(merge['month_orders'])*100).round(2)
-
+        delivery_status_df['pct_delivery'] = (merge['order_quantity'].div(merge['month_orders'])*100).round(2)
+        return delivery_status_df
+        
     @staticmethod
     def get_order_quantity_distribution(df):
         """
@@ -69,11 +70,7 @@ class Utility:
         """
 
         engine = sqlalchemy.create_engine(
-        f"""postgresql+psycopg2://
-        {username}:
-        {password}@
-        {host}/
-        {db_name}""")
+        f"""postgresql+psycopg2://{username}:{password}@{host}/{db_name}""")
         return engine
 
 

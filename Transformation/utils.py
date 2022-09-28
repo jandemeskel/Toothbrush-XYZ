@@ -63,11 +63,7 @@ class Utility:
         """
 
         engine = sqlalchemy.create_engine(
-        f"""postgresql+psycopg2://
-        {username}:
-        {password}@
-        {host}/
-        {db_name}""")
+        f"""postgresql+psycopg2://{username}:{password}@{host}/{db_name}""")
         return engine
 
 
