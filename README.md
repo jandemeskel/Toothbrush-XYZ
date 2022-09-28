@@ -10,7 +10,7 @@ The contents of this repository are used to setup an automated pipeline & dashbo
 - Pulling data from AuroraDB, cleaning and posting to a production schema
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/80219582/192653351-984c0195-bb7e-4f88-bf8f-30131fbb4f7a.png" />
+  <img src="https://user-images.githubusercontent.com/80219582/192729128-d8b7e8c0-a249-4a3c-902f-f2ae6afeb8db.png" />
 </p>
 
 - Dockerizing both Ingestion & Production scripts, pushing to an ECR
