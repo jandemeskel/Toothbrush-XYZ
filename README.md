@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/80219582/192728064-ea98c836-3dbd-42ee-a7af-10f409bf29f6.png" />
+</p>
+
 ## Summary
 
 The contents of this repository are used to setup an automated pipeline & dashboard using AWS by;
