@@ -13,7 +13,7 @@ The contents of this repository are used to setup an automated pipeline & dashbo
 - Creating a Dashboard using dash (flask-wrapper framework), dockerizing and hosting on EC2
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/80219582/193146718-23fe5938-fc53-409b-b87b-353d3fa30fe0.png" />
+  <img src="https://user-images.githubusercontent.com/80219582/193147173-54a33527-8f10-40a6-89c3-2d860e89f013.png" />
 </p>
 
 ## Dashboard Link
